@@ -1,0 +1,34 @@
+.breadcrumb {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-right: 8px;
+        a {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--seryy---c4c4c4);
+        }
+    } 
+    li:last-child {
+        a {
+            color: var(--sizyy---6b7073);
+        }
+    }
+    li:not(:last-child)::after {
+        display: inline-block;
+        margin: 0 .25rem;
+        margin-left: 8px;
+        content: ">"; 
+        color: var(--seryy---c4c4c4);
+      
+      }
+  }
+  
+  
+  
