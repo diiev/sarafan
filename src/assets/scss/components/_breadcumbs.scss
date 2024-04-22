@@ -13,11 +13,22 @@
         font-weight: 400;
         font-size: 14px;
         color: var(--seryy---c4c4c4);
+        transition: all .3s ease-in-out;
+        }
+        &:hover {
+            a {
+                color: var(--krasnyy---cd3b31)
+            }
         }
     } 
     li:last-child {
         a {
             color: var(--sizyy---6b7073);
+        } 
+        &:hover {
+            a {
+                color: var(--krasnyy---cd3b31)
+            }
         }
     }
     li:not(:last-child)::after {

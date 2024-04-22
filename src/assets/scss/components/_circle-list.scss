@@ -1,0 +1,19 @@
+.circle {
+    &__list {
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--chernyy---151516);
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            background: var(--krasnyy---cd3b31);
+            position: absolute;
+            left: -10px;
+            top: 9px;
+        }
+    }
+}

@@ -1,3 +1,21 @@
 .promo {
-    padding-top: 29px;
+    padding-top: 80px; 
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        color: var(--chernyy---151516);
+    }
+&__wrapper {
+    margin-top: 24px;
+    display: flex;
+    gap: 30px;
+}
+
+
+ &__slider {
+    &-items {
+        display: flex;
+        gap: 46px;
+    }
+ }
 }

@@ -1,0 +1,7 @@
+.demo {
+    padding-top: 80px;
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+    }
+}
