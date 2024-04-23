@@ -25,7 +25,7 @@ const slider = () => {
             },
            
             1024: {
-                items: 3
+                items: 1,
             },
             1180: {
                 items: 3,

@@ -1,0 +1,59 @@
+@media (max-width:1770px) {
+    
+    .container {
+        padding: 0 15px;
+    }
+    .header {
+        position: static;
+        &__container {
+            justify-content: space-between;
+        }
+       
+        &__links, &__search,  &__time-works,  .burger {
+            margin-left: 0;
+        }
+       .burger {
+        width: 30px;
+       }
+    }
+    .home {
+        &__img {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+          
+        }
+    }
+    .demo {
+        &__wrapper, &__container {
+            display: flex;
+        }
+        &__img {
+           
+            img {
+                height: 100%;
+                width: 49%;
+                object-fit: cover;
+            }
+        }
+        &__item {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+       
+    }
+
+    .footer {
+       .search {
+        margin-left: 0;
+       }
+        &__menu {
+            gap: 40px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@media (max-width:1440px) {
+
+  .promo {
+    &__wrapper {
+     grid-template-columns: 308px auto;
+    }
+  }
+  .demo {
+    &__descr {
+        span {
+            font-size: 30px;
+        }
+    }
+  }
+  .footer {
+    &__wrapper {
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu {
+        width: 100%;
+        align-items: center;
+        justify-content:  center;
+     
+    }
+    &__sblock {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  .menu {
+    &__content {
+        margin-left: 10px;
+        gap: 10px;
+    }
+    &__divider {
+        margin-left: 10px;
+    }
+  }
+}
