@@ -25,9 +25,10 @@ const slider = () => {
             },
            
             1024: {
-                items: 1,
+                items: 2,
+                gutter: 10,
             },
-            1180: {
+            1440: {
                 items: 3,
               
             }

@@ -1010,7 +1010,7 @@ a {
 
 @media (max-width: 1440px) {
     .promo__wrapper {
-        grid-template-columns: 308px auto;
+        grid-template-columns: 616px auto;
     }
 
     .demo__descr span {
@@ -1043,5 +1043,53 @@ a {
 
     .menu__divider {
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__logo img {
+        width: 50px;
+    }
+
+    .header__time-works, .header__link {
+        font-size: 12px;
+    }
+
+    .header__link:last-child {
+        margin-left: 5px;
+    }
+
+    .header .search input {
+        width: 200px;
+    }
+
+    .home__wrapper {
+        flex-direction: column;
+    }
+
+    .promo__wrapper {
+        grid-template-columns: 630px;
+        justify-content: center;
+    }
+
+    .demo__wrapper {
+        flex-direction: column;
+    }
+
+    .demo__descr {
+        display: flex;
+    }
+
+    .demo__img img {
+        height: auto;
+    }
+
+    .demo__container {
+        flex-direction: column;
+    }
+
+    .demo__item img {
+        height: auto;
+        width: auto;
     }
 }
