@@ -45,19 +45,24 @@
         </div>
         <div class="promo__wrapper">
             <div class="promo__slider">
-                <div class="promo__slider-items">
+                <div id="slider" class="promo__slider-items">
                     <div class="promo__slider-item"><img src="assets/img/brand1.jpg" alt=""></div>
                     <div class="promo__slider-item"><img src="assets/img/brand2.jpg" alt=""></div>
                     <div class="promo__slider-item"><img src="assets/img/brand3.jpg" alt=""></div>
+                    
                 </div>
-                <div class="promo__slider-btns">
-                    <div class="promo__slider-left"></div>
-                    <div class="promo__slider-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div id="slider__btns" class="promo__slider-btns">
+                    <div class="promo__slider-left">
+                        <svg width="43" height="16" viewBox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42 9C42.5523 9 43 8.55228 43 8C43 7.44772 42.5523 7 42 7L42 9ZM0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM42 7L1 7L1 9L42 9L42 7Z" fill="#151516" />
+                          </svg>
                     </div>
-                    <div class="promo__slider-right"></div>
+                    <ul id="slider__dots" class="promo__slider-dots"></ul>
+                    <div class="promo__slider-right">
+                        <svg width="43" height="16" viewBox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM42.7071 8.70711C43.0976 8.31658 43.0976 7.68342 42.7071 7.29289L36.3431 0.928932C35.9526 0.538408 35.3195 0.538408 34.9289 0.928932C34.5384 1.31946 34.5384 1.95262 34.9289 2.34315L40.5858 8L34.9289 13.6569C34.5384 14.0474 34.5384 14.6805 34.9289 15.0711C35.3195 15.4616 35.9526 15.4616 36.3431 15.0711L42.7071 8.70711ZM1 9L42 9V7L1 7L1 9Z" fill="#151516" />
+                          </svg>
+                    </div>
                 </div>
             </div>
            <ul class="promo__lists circle__lists">
@@ -77,19 +82,24 @@
 <section class="demo">
     <div class="container">
         <div class="demo__wrapper">
-            <div class="demo__item">
-                <div class="demo__item-allsquare">Общая площадь торгового центра <span>25 816 м<sup>2</sup></span></div>
-                <div class="demo__item-square">Площадь, сдаваемая в аренду <span>16 675 м<sup>2</sup></span></div>
-                <div class="demo__item-square">Парковка (машиномест) <span>500</span></div>
-                <div class="demo__item-square">Посещаемость (в неделю) <span>100 000 чел</div>
-                
+            <div class="demo__descr">
+                <div class="demo__descr-text">Общая площадь торгового центра <span>25 816 м<sup>2</sup></span></div>
+                <div class="demo__descr-text">Площадь, сдаваемая в аренду <span>16 675 м<sup>2</sup></span></div>
+                <div class="demo__descr-text">Парковка (машиномест) <span>500</span></div>
+                <div class="demo__descr-text">Посещаемость (в неделю) <span>100 000 чел</div>
             </div>
-            <div class="demo__item"><img src="assets/img/demo1.jpg" alt="demo1"></div>
-            <div class="demo__item"><img src="assets/img/demo2.jpg" alt="demo2"></div>
+       
+            <div class="demo__img">
+                <img src="assets/img/demo1.jpg" alt="demo1">
+                <img src="assets/img/demo2.jpg" alt="demo2">
+            </div>
+        </div>
+        <div class="demo__container">
             <div class="demo__item"><img src="assets/img/demo3.jpg" alt="demo3"></div>
             <div class="demo__item"><img src="assets/img/demo4.jpg" alt="demo4"></div>
             <div class="demo__item"><img src="assets/img/demo5.jpg" alt="demo5"></div>
-
         </div>
+
+     
     </div>
 </section>

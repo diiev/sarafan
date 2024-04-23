@@ -1,10 +1,15 @@
 @import './libs/reset';
 @import './general/base';
+@import './libs/animate';
+@import './libs/tiny-slider';
 @import './general/variables';
 @import './general/typography';
 @import './components/header';
+@import './components/search';
 @import './components/breadcumbs';
 @import './components/circle-list';
 @import './components/home';
 @import './components/promo';
 @import './components/demo';
+@import './components/footer';
+@import './components/menu';

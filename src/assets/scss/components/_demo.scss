@@ -1,7 +1,40 @@
 .demo {
     padding-top: 80px;
+    padding-bottom: 80px;
+    img {
+        object-fit: cover;
+    }     
     &__wrapper {
+        display: grid;
+        grid-template-columns: 190px 570px 870px;
+        gap: 105px;
+     
+    }
+    &__img {
         display: flex;
         gap: 30px;
+          
+    }
+    &__container {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 420px 570px 720px;
+        gap: 30px;
+    }
+    &__descr { 
+       &-text {
+        margin-bottom: 39px;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--sizyy---6b7073); 
+        span {
+            margin-top: 17px;
+            display: block;
+            font-size: 36px;
+            color: var(--chernyy---151516);
+        }
+       }
+        
+       
     }
 }

@@ -1,0 +1,74 @@
+.footer {
+padding: 40px 0px;
+box-shadow: 0 1px 44px 0 rgba(0, 0, 0, 0.12);
+background: var(--belyy---ffffff);
+&__wrapper {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+&__menu {
+    display: flex;
+    gap: 115px;
+    &-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &-link {
+        font-weight: 400;
+        font-size: 16px;
+        transition: all .3s ease-in-out;
+        color: var(--chernyy---151516);
+        &:hover {
+            color: var(--krasnyy---cd3b31);
+        }
+    }
+} 
+ &__sblock {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    gap: 54px;
+ } 
+ &__social {
+    display: flex;
+    gap: 20px;
+    &-link {
+        display: flex;
+        align-items:center;
+        border-radius: 100%;
+        background: var(--svetlo-seryy---e4e4e4);
+        padding: 7px;
+        svg {
+            path {
+                transition: all .3s ease-in-out;
+            }
+        }
+        &:hover {
+          svg {
+            path {
+                fill: var(--krasnyy---cd3b31);
+            }
+          }
+        }
+    }
+   
+ }
+ &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--chernyy---151516);
+    
+ }
+ &__adress, &__tel {
+    color: var(--chernyy---151516);
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: var(--krasnyy---cd3b31);
+    }
+ }
+}

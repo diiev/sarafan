@@ -7,7 +7,8 @@
     }
 &__wrapper {
     margin-top: 24px;
-    display: flex;
+    display: grid;
+    grid-template-columns:1012px auto;
     gap: 30px;
 }
 
@@ -15,7 +16,48 @@
  &__slider {
     &-items {
         display: flex;
-        gap: 46px;
+    } 
+    &-btns {
+        margin-top: 35px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        gap: 14px;
+        cursor: pointer;
+       
+    } 
+    &-left, &-right {
+        svg {
+            path {
+                transition: all .3s ease-in-out;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    fill: var(--krasnyy---cd3b31);
+                }
+            }
+        }
+    }
+    &-dots {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        .tns-nav-active {
+            height: 9px !important;
+            width: 9px !important;
+            background: var(--sizyy---6b7073) !important;
+        }
+        li {
+            border:none;
+            height: 6px;
+            width: 6px;
+            border-radius: 100%;
+            background: rgba(107, 112, 115, 0.5);
+        } 
+       
     }
  }
 }

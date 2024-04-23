@@ -1,5 +1,11 @@
 .circle {
+    &__lists {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
     &__list {
+
         position: relative;
         font-weight: 400;
         font-size: 14px;
