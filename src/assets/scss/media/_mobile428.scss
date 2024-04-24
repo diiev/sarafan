@@ -11,15 +11,19 @@
     }
     .promo {
         &__wrapper {
-            grid-template-columns: 320px;
+            grid-template-columns: 380px;
         }
         &__title {
             font-size: 24px;
         }
+        
     }
     .home {
         &__title {
             font-size: 30px;
+        }
+        &__link {
+            font-size: 20px;
         }
     }
     .demo {

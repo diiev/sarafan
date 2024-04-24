@@ -17,6 +17,12 @@
     &-items {
         display: flex;
     } 
+    &-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
     &-btns {
         margin-top: 35px;
         display: flex;

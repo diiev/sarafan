@@ -721,6 +721,11 @@ a {
     display: flex;
 }
 
+.promo__slider-item img {
+    display: block;
+    margin: 0 auto;
+}
+
 .promo__slider-btns {
     margin-top: 35px;
     display: flex;
@@ -1123,7 +1128,7 @@ a {
     }
 
     .promo__wrapper {
-        grid-template-columns: 320px;
+        grid-template-columns: 380px;
     }
 
     .promo__title {
@@ -1132,6 +1137,10 @@ a {
 
     .home__title {
         font-size: 30px;
+    }
+
+    .home__link {
+        font-size: 20px;
     }
 
     .demo__descr {
