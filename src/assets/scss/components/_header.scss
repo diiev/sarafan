@@ -11,27 +11,19 @@
         align-items: center;
     }
    &__logo {
-    display: block;
     padding: 7.5px 0px;
-    img {
-        transition: all .3s ease-in-out;
-    }
-    &:hover {
-        img {
-            filter: grayscale(0.5);
-            
-        }
-    }
    } 
    &__time-works {
-    margin-left: 658px;
+    margin-left: auto;
     font-weight: 400;
     font-size: 14px;
     color: var(--sizyy---6b7073);
     text-align: right;
    }
    &__links {
-    margin-left: 86px;
+    margin-left: auto;
+    display: flex;
+    gap: 60px;
    }
    &__link {
     font-family: var(--font-family);
@@ -39,19 +31,20 @@
     font-size: 14px;
     color: var(--sizyy---6b7073);
     transition: all .3s ease-in-out;
-    &:last-child {
-        margin-left: 93px;
-    }
+   
     &:hover {
         color:var(--krasnyy---cd3b31)
     }
    } 
  
    .burger {
+    width: 34px;
+    height: auto;
     position: relative;
-    margin-left: 117px;
+    margin-left: auto;
     cursor: pointer;
     span {
+        cursor: pointer;
         position: absolute;
         border-radius: 6px;
         width: 33px;

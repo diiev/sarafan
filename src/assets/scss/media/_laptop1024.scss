@@ -45,11 +45,9 @@
   }
   .menu {
     &__content {
-        margin-left: 10px;
-        gap: 10px;
-    }
-    &__divider {
-        margin-left: 10px;
+      
+      flex-wrap: wrap;
     }
   }
+  
 }

@@ -225,7 +225,6 @@ i {
 
 html, body {
     height: 100%;
-    font-size: 15px;
 }
 
 a {
@@ -448,6 +447,18 @@ a {
     font-family: var(--font-family);
 }
 
+.logo {
+    display: block;
+}
+
+.logo img {
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover img {
+    filter: grayscale(0.5);
+}
+
 .header {
     box-shadow: 0 4px 26px 0 rgba(0, 0, 0, 0.09);
     background: var(--belyy---ffffff);
@@ -463,20 +474,11 @@ a {
 }
 
 .header__logo {
-    display: block;
     padding: 7.5px 0px;
 }
 
-.header__logo img {
-    transition: all 0.3s ease-in-out;
-}
-
-.header__logo:hover img {
-    filter: grayscale(0.5);
-}
-
 .header__time-works {
-    margin-left: 658px;
+    margin-left: auto;
     font-weight: 400;
     font-size: 14px;
     color: var(--sizyy---6b7073);
@@ -484,7 +486,9 @@ a {
 }
 
 .header__links {
-    margin-left: 86px;
+    margin-left: auto;
+    display: flex;
+    gap: 60px;
 }
 
 .header__link {
@@ -495,21 +499,20 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.header__link:last-child {
-    margin-left: 93px;
-}
-
 .header__link:hover {
     color: var(--krasnyy---cd3b31);
 }
 
 .header .burger {
+    width: 34px;
+    height: auto;
     position: relative;
-    margin-left: 117px;
+    margin-left: auto;
     cursor: pointer;
 }
 
 .header .burger span {
+    cursor: pointer;
     position: absolute;
     border-radius: 6px;
     width: 33px;
@@ -1054,12 +1057,7 @@ a {
     }
 
     .menu__content {
-        margin-left: 10px;
-        gap: 10px;
-    }
-
-    .menu__divider {
-        margin-left: 10px;
+        flex-wrap: wrap;
     }
 }
 
@@ -1072,12 +1070,28 @@ a {
         font-size: 12px;
     }
 
+    .header__links {
+        gap: 15px;
+    }
+
     .header__link:last-child {
         margin-left: 5px;
     }
 
     .header .search input {
         width: 200px;
+    }
+
+    .header .burger span {
+        transform: scale(0.8);
+    }
+
+    .menu {
+        top: 65px;
+    }
+
+    .home {
+        padding-top: 100px;
     }
 
     .home__wrapper {
@@ -1121,6 +1135,10 @@ a {
 @media (max-width: 625px) {
     .header__time-works {
         display: none;
+    }
+
+    .header__links {
+        gap: 5px;
     }
 
     .header .search input {
@@ -1191,6 +1209,10 @@ a {
 
     .header__logo img {
         width: 65px;
+    }
+
+    .menu {
+        top: 80px;
     }
 
     .home__title {
