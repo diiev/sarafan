@@ -901,14 +901,15 @@ a {
 
 .menu__active {
     display: block;
+    overflow: auto;
 }
 
 .menu__wrapper {
     display: flex;
+    gap: 60px;
 }
 
 .menu__divider {
-    margin-left: 67px;
     width: 1px;
     background: var(--seryy---c4c4c4);
 }
@@ -916,7 +917,7 @@ a {
 .menu__main {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 30px;
 }
 
 .menu__main-link {
@@ -931,19 +932,15 @@ a {
 }
 
 .menu__content {
-    margin-left: 150px;
     display: flex;
+    flex-wrap: wrap;
     gap: 120px;
 }
 
 .menu__submain {
     display: flex;
     flex-direction: column;
-    gap: 45px;
-}
-
-.menu__submain_mt {
-    margin-top: 65px;
+    gap: 40px;
 }
 
 .menu__submain-title {
@@ -1056,8 +1053,28 @@ a {
         text-align: center;
     }
 
+    .menu__wrapper {
+        gap: 40px;
+    }
+
+    .menu__main, .menu__submain {
+        gap: 20px;
+    }
+
+    .menu__main-link {
+        font-size: 18px;
+    }
+
+    .menu__submain-link {
+        font-size: 14px;
+    }
+
+    .menu__submain-title {
+        font-size: 20px;
+    }
+
     .menu__content {
-        flex-wrap: wrap;
+        gap: 35px;
     }
 }
 
@@ -1088,6 +1105,30 @@ a {
 
     .menu {
         top: 65px;
+    }
+
+    .menu__wrapper {
+        gap: 20px;
+    }
+
+    .menu__main, .menu__submain {
+        gap: 10px;
+    }
+
+    .menu__main-link {
+        font-size: 16px;
+    }
+
+    .menu__submain-link {
+        font-size: 13px;
+    }
+
+    .menu__submain-title {
+        font-size: 18px;
+    }
+
+    .menu__content {
+        gap: 20px;
     }
 
     .home {

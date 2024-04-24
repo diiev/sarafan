@@ -10,19 +10,20 @@
     padding-bottom: 79px; 
     &__active {
         display: block;
+        overflow: auto;
     }
     &__wrapper {
         display: flex;
+        gap: 60px;
     }
     &__divider {
-        margin-left: 67px;
         width: 1px;
         background: var(--seryy---c4c4c4);
     }
     &__main {
         display: flex;
         flex-direction: column;
-        gap: 48px;
+        gap: 30px;
       &-link {
         font-weight: 400;
         font-size: 20px;
@@ -34,17 +35,15 @@
       }
     }
     &__content {
-        margin-left: 150px;
+      
         display: flex;
+        flex-wrap: wrap;
         gap: 120px;
     }
     &__submain {
        display: flex;
        flex-direction: column;
-       gap: 45px;
-       &_mt {
-        margin-top: 65px;
-       }
+       gap: 40px;
        &-title {
         font-weight: 700;
         font-size: 24px;

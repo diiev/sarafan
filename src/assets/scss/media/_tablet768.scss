@@ -34,6 +34,26 @@
     
     .menu {
         top: 65px;
+        &__wrapper {
+            gap: 20px;
+        }
+        &__main, &__submain {
+            gap: 10px;
+            
+        }
+        &__main-link {
+            font-size: 16px;
+        }
+        &__submain-link {
+            font-size: 13px;
+        }
+        &__submain-title {
+            font-size: 18px;
+        }
+        &__content {
+            gap: 20px;
+        }
+       
     }
     .home {
         padding-top: 100px;
