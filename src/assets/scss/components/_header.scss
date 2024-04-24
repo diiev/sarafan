@@ -5,23 +5,22 @@
     width: 100%;
     z-index: 9999;
    
-    &__container {
+    &__wrapper {
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
    &__logo {
     padding: 7.5px 0px;
    } 
    &__time-works {
-    margin-left: auto;
     font-weight: 400;
     font-size: 14px;
     color: var(--sizyy---6b7073);
     text-align: right;
    }
    &__links {
-    margin-left: auto;
     display: flex;
     gap: 60px;
    }
@@ -38,13 +37,13 @@
    } 
  
    .burger {
-    width: 34px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    pointer-events: visible;
     position: relative;
-    margin-left: auto;
     cursor: pointer;
     span {
-        cursor: pointer;
+        pointer-events: visible;
         position: absolute;
         border-radius: 6px;
         width: 33px;
