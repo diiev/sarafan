@@ -29,7 +29,19 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-    }
+    } 
+   
+      &__menu {
+      
+      text-align: center;
+      }
+      &-lists {
+          justify-content: center;
+         
+      }
+  &__contacts {
+      text-align: center;
+  }
   }
   .menu {
     &__content {

@@ -1,0 +1,22 @@
+@media (max-width:375px) {
+    .header {
+        &__link {
+            display: none;
+        }
+        .search {
+            input {
+                width: 180px;
+            }
+        }
+    }
+    .home {
+        &__title {
+            font-size: 26px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            grid-template-columns: 280px;
+        }
+    }
+}

@@ -20,10 +20,12 @@ const slider = () => {
         loop: true,
         freezable: false,
         responsive: {
-            390: {
+            425: {
+                items: 1
+            },
+            768: {
                 items: 2
             },
-           
             1024: {
                 items: 2,
                 gutter: 10,
