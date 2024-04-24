@@ -508,6 +508,7 @@ a {
     pointer-events: visible;
     position: relative;
     cursor: pointer;
+    width: 33px;
 }
 
 .header .burger span {
@@ -550,7 +551,6 @@ a {
 }
 
 .search {
-    margin-left: 97px;
     position: relative;
 }
 
