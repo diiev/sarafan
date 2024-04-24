@@ -1171,6 +1171,10 @@ a {
     .footer__logo img {
         width: 100%;
     }
+
+    .footer__menu-lists {
+        gap: 5px;
+    }
 }
 
 @media (max-width: 625px) {
@@ -1227,6 +1231,7 @@ a {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        gap: 10px;
     }
 
     .footer-lists {
