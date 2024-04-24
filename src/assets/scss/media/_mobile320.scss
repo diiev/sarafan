@@ -5,7 +5,12 @@
         }
         .search {
             input {
-                width: 180px;
+                width: 150px;
+            }
+        }
+        &__logo {
+            img {
+                width: 65px;
             }
         }
     }

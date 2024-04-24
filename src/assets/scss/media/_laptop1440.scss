@@ -4,7 +4,7 @@
         padding: 0 15px;
     }
     .header {
-        position: static;
+        position: fixed;
         &__container {
             justify-content: space-between;
         }
