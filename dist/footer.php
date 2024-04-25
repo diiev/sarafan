@@ -1,15 +1,38 @@
-        <footer class="footer">
+      
+         </main>
+       <footer class="footer">
             <div class="container footer__wrapper">
-                <a href="/" class="logo footer__logo">
-                    <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/logo.png" alt="logo">
-                  </a>
-                  <nav class="footer__menu">
-                    <ul class="footer__menu-lists">
-                        <li class="footer__menu-list"><a href="" class="footer__menu-link">Магазины</a></li>
-                        <li class="footer__menu-list"><a href="" class="footer__menu-link">Кафе и рестораны</a></li>
-                        <li class="footer__menu-list"><a href="" class="footer__menu-link">Услуги и сервисы</a></li>
-                        <li class="footer__menu-list"><a href="" class="footer__menu-link">Развлечения</a></li>
-                    </ul>
+            <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/inc_logo.php"
+	)
+);?>
+                  <nav class="footer__menu"> 
+
+                   
+                    <?$APPLICATION->IncludeComponent(
+	"bitrix:menu",
+	"footer",
+	Array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(""),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "bottom",
+		"USE_EXT" => "N"
+	)
+);?>
+               
+
                     <ul class="footer__menu-lists">
                         <li class="footer__menu-list"><a href="" class="footer__menu-link">О нас</a></li>
                         <li class="footer__menu-list"><a href="" class="footer__menu-link">События</a></li>
@@ -63,12 +86,25 @@
                   <div class="footer__contacts">
                     <a href="https://yandex.ru/maps/?ll=41.649085%2C48.990832&mode=routes&no-distribution=1&profile-mode=1&rtext=43.328022%2C45.713363~54.198093%2C37.581654&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1081996392&source=wizbiz_new_map_single&z=6.15" class="footer__adress" target="_blank">300041, Тульская обл.,
                        <br> г. Тула, ул. Путейская, д. 5</a>
-                    <div class="footer__timeworks">ТЦ Сарафан: 10:00-21:00
-                        <br>Лента: 08:00-22:00</div>
-                        <a href="tel:+74872338055" class="footer__tel">+7 (4872) 33-80-55</a>
+                    <div class="footer__timeworks">
+                      ТЦ Сарафан: 10:00-21:00
+                        <br>Лента: 08:00-22:00
+                      </div>
+                      <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/inc_phone.php"
+	)
+);?>
+                      
                   </div>
             </div>
         </footer>      
-     </div>
+     </div> 
+
 </body>
 </html>

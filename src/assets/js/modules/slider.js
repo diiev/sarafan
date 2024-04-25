@@ -1,7 +1,7 @@
 import { tns } from "tiny-slider";
 
 const slider = () => { 
-
+try {
     const sliderItems = document.querySelectorAll('.promo__slider-item');
     const sliderDots = document.querySelector('.promo__slider-dots');
         for (let i = 0; i < sliderItems.length; i++) {
@@ -46,7 +46,9 @@ const slider = () => {
         _slider.goTo('next');
       });
  
-       
+}
+   
+       catch (e) {}
    
 
 };

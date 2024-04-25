@@ -3,10 +3,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 ?>
 
-
-<main class="page">
-            <section class="home">
-                <div class="container">
                     <div class="breadcumbs">
                      
                         <nav aria-label="Breadcrumb" class="breadcrumb"> 
@@ -29,12 +25,44 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                     </div>
                     <div class="home__wrapper">
                         <div class="home__img">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/main_.jpg" alt="main">
+                        <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/inc_home-img.php"
+	)
+);?>
+     
+                          
                         </div>
                         <div class="home__descr">
-                            <h1 class="home__title">Аренда в ТУЦ “Сарафан”</h1>
-                            <div class="home__text">Торговый центр «Сарафан», расположенный по адресу: г. Тула, ул. Путейская, д.5
-                                (Площадь Московского вокзала), предлагает помещения в аренду от собственника от 25 до 1000 кв. м.
+                            <h1 class="home__title">
+                            <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/inc_home-title.php"
+	)
+);?>
+                          </h1>
+                            <div class="home__text">
+                            <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/inc_home-text.php"
+	)
+);?>
+                               
                             </div>
                             <a href="#" class="home__link">Скачать презентацию <svg width="22" height="22" viewBox="0 0 22 22"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,16 +70,43 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                                         d="M11.0007 16.5667L4.56732 10.1333L6.00065 8.70001L10.0007 12.7V0.333344H12.0007V12.7L16.0007 8.70001L17.434 10.1333L11.0007 16.5667ZM2.33398 21.6667C1.80065 21.6667 1.33398 21.4667 0.933984 21.0667C0.533984 20.6667 0.333984 20.2 0.333984 19.6667V14.9H2.33398V19.6667H19.6673V14.9H21.6673V19.6667C21.6673 20.2 21.4673 20.6667 21.0673 21.0667C20.6673 21.4667 20.2007 21.6667 19.6673 21.6667H2.33398Z"
                                         fill="#151516" />
                                 </svg></a>
-                             <h2 class="home__subtitle">Преимущества аренды в нашем торговом центре:</h2>  
-                              <ul class="home__lists circle__lists">
-                                <li class="home__list circle__list">ТЦ «Сарафан» находится в 5 минутах езды от центра города на площади Московского вокзала на одной из самых оживленных улиц города – Красноармейский проспект. </li>
-                                <li class="home__list circle__list"> Рядом жилой массив, пересечение основных транспортных и пешеходных потоков –конечная остановка общественного транспорта, железнодорожный вокзал.</li>
-                                <li class="home__list circle__list">На территории ТЦ «Сарафан» есть бесплатная парковка для клиентов, более 500 машиномест, удобный подъезд.</li>
-                                <li class="home__list circle__list">Ежедневно наш ТЦ посещает порядка 10 000 тысяч человек различной целевой аудитории</li>
-                                <li class="home__list circle__list">Демократичные цены за аренду площади</li>
-                                <li class="home__list circle__list">У нас Вы можете арендовать площадь под магазины белья, одежды и обуви, салоны, точки общепита и др.</li>
+                             <h2 class="home__subtitle">
+                                <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/inc_home-subtitle.php"
+                                        )
+                                    );?>   
+                           </h2>  
+                              <ul class="home__lists circle__lists"> 
+                              <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/inc_home-lists.php"
+                                        )
+                                    );?> 
+                             
                               </ul>
-                              <div class="home__text">Открытие торговой точки в одном из оживленных мест города обеспечит доходность, развитие и процветание Вашего бизнеса.</div>
+                              <div class="home__text">
+                              <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/inc_home-subtext.php"
+                                        )
+                                    );?> 
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -59,8 +114,18 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
             
             <section class="promo">
                 <div class="container">
-                    <div class="promo__title">
-                        Более 130 бутиков и магазинов уже арендуют у нас помещения
+                    <div class="promo__title"> 
+                    <?$APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "",
+                                        Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_SUFFIX" => "inc",
+                                            "EDIT_TEMPLATE" => "",
+                                            "PATH" => "/include/inc_promo-title.php"
+                                        )
+                                    );?> 
+                       
                     </div>
                     <div class="promo__wrapper">
                         <div class="promo__slider">
@@ -122,6 +187,6 @@ $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
                  
                 </div>
             </section>
-        </main>
+      
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

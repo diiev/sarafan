@@ -15,10 +15,18 @@
      <div class="wrapper">
         <header class="header">
         <div class="container">
-           <div class="header__wrapper">
-           <a href="/" class="logo header__logo">
-              <img src="<?=SITE_TEMPLATE_PATH?>/assets/img/logo.png" alt="logo">
-            </a>
+           <div class="header__wrapper"> 
+           <?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/inc_logo.php"
+	)
+);?>
+          
               <div class="header__time-works">
                  Режим работы: пн-вс 10:00-21:00<span><br>Лента 08:00-22:00</span> 
               </div>
@@ -110,4 +118,7 @@
           
         </nav>
         </header>   
+        <main class="page">
+            <section class="home">
+                <div class="container">
 

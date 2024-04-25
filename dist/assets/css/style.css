@@ -244,6 +244,10 @@ a {
     flex-direction: column;
 }
 
+.page {
+    flex-grow: 1;
+}
+
 @keyframes fade {
     from {
         opacity: 0;
@@ -462,8 +466,7 @@ a {
 .header {
     box-shadow: 0 4px 26px 0 rgba(0, 0, 0, 0.09);
     background: var(--belyy---ffffff);
-    width: 100%;
-    z-index: 9999;
+    position: relative;
 }
 
 .header__wrapper {
@@ -643,7 +646,7 @@ a {
 }
 
 .home {
-    padding-top: 130px;
+    padding-top: 30px;
 }
 
 .home__wrapper {
@@ -963,10 +966,6 @@ a {
 @media (max-width: 1770px) {
     .container {
         padding: 0 15px;
-    }
-
-    .header {
-        position: fixed;
     }
 
     .header__container {
