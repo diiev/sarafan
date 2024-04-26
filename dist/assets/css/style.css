@@ -1131,10 +1131,6 @@ a {
         gap: 20px;
     }
 
-    .home {
-        padding-top: 100px;
-    }
-
     .home__wrapper {
         flex-direction: column;
     }
