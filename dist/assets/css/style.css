@@ -246,6 +246,12 @@ a {
 
 .page {
     flex-grow: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page__content {
+    padding: 30px 0px;
 }
 
 @keyframes fade {
@@ -643,10 +649,6 @@ a {
     position: absolute;
     left: -10px;
     top: 9px;
-}
-
-.home {
-    padding-top: 30px;
 }
 
 .home__wrapper {

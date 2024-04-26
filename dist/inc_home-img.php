@@ -1,1 +1,0 @@
-<img src="<?=SITE_TEMPLATE_PATH?>/assets/img/main_.jpg" alt="main">
